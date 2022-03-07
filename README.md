@@ -1,6 +1,9 @@
 ## TP1 : Convolution et mémoire partagée
 
 Ce tp est à rendre pour dimanche 13 mars 2022 24:00 date limite.
+A rendre par mail à elias.munoz@univ-amu.fr avec pour sujet : [M1 GPU] TP1
+**Pensez à renseigner votre NOM et Prénom dans le corps du mail.**
+**Pour ce TP, vous pouvez vous mettre en groupe de 2, dans ce cas renseignez le nom et prénom des deux membres du binôme**
 
 #### Google Colab
 Pour les étudiants n'ayant pas de carte graphique nvidia, le mieux est de creer un compte **google colab**.
@@ -26,6 +29,7 @@ La convolution est une opération permettant d'alterer une image en faisant glis
 ![Convolution1D étapte 3](conv3.png)
 
 ![Convolution1D étapte 4](conv4.png)
+
 
 Nous avons un tableau **a** de **N** éléments. On veut lui faire glisser un **filtre** de taille **f** = 3.
 
@@ -61,7 +65,7 @@ Pour rappel chaque threads a accès a la mémoire partagé de son block, mais le
 9. Dans le main:
 	1. Créez un nouveau tableau **cs** et **d_cs** de même dimension que c pour stocker les résultats de la convolution.
 10. Compléter shared_convolution_1D :
-	2. Créez un tableau $\_\_shared\_\_$ **s_data** de la taille d'un block
+	2. Créez un tableau $\_\_shared\_\_$ **s_data** de la taille d'un block.
 	3. Initialisez le tableau en lui ajoutant les éléments de **a** que le block va traiter.
 		1. N'oubliez pas de synchroniser avec $\_\_syncthread()$ après initialisation.
 	4. Modifier le code afin de pouvoir utiliser cette mémoire partagé.
