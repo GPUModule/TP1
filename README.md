@@ -1,7 +1,8 @@
 ## TP1 : Convolution et mémoire partagée
 
 Ce tp est à rendre pour dimanche 13 mars 2022 24:00 date limite.
-A rendre par mail à elias.munoz@univ-amu.fr avec pour sujet : [M1 GPU] TP1
+A rendre par mail à elias.munoz@univ-amu.fr avec pour sujet : [M1 GPU] TP1.
+
 **Pensez à renseigner votre NOM et Prénom dans le corps du mail.**
 **Pour ce TP, vous pouvez vous mettre en groupe de 2, dans ce cas renseignez le nom et prénom des deux membres du binôme**
 
