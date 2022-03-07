@@ -17,8 +17,15 @@ Vous travaillerez sur le fichier exercice01.cu ou alors dans l'avant dernière c
 
 ##### Simple convolution 1D
 
-La convolution est une opération permettant d'alterer une image en faisant glisser un filtre sur cette image. Cela peut permettre d'ajouter du flou sur l'image, de detecter des contour et bien d'autre
+La convolution est une opération permettant d'alterer une image en faisant glisser un filtre sur cette image. Cela peut permettre d'ajouter du flou sur l'image, de detecter des contour et bien d'autres.
 
+![[conv1.png]]
+
+![[conv2.png]]
+
+![[conv3.png]]
+
+![[conv4.png]]
 
 Nous avons un tableau **a** de **N** éléments. On veut lui faire glisser un **filtre** de taille **f** = 3.
 
@@ -71,4 +78,11 @@ Les threads d'un block n'ont pas accès au tableau **s_data** d'autres blocks.
 
 Exercice 2 (Bonus):
 
-Réalisez les même opération mais avec des convolutions 2D
+Cet exercice est un bonus pour si vous voulez implementez un convolution 2D (peut-être utile si vous faites de l'IA).
+![[conv2D.png]]
+
+Réalisez les même opération mais avec des convolutions 2D avec :
+dim3 threadsPerBlock(THREADS_PER_BLOCK)
+dim3 blocksPerGrid(N/THREADS_PER_BLOCK, N/THREADS_PER_BLOCK)
+
+Un guide sur les convolutions sous format pdf est inclu dans le répertoire git (en anglais). 
