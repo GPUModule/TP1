@@ -31,8 +31,7 @@ La convolution est une opération permettant d'alterer une image en faisant glis
 
 ![Convolution1D étapte 4](conv4.png)
 
-
-Nous avons un tableau **a** de **N** éléments. On veut lui faire glisser un **filtre** de taille **f** = 3.
+Dans le code, nous avons un tableau **a** de **N** éléments. On veut lui faire glisser un **filtre** de taille **f** = 3.
 
 Pour trouver la taille du tableau résultant, il suffit de faire **n_c = N - f + 1**
 
