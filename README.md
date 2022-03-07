@@ -78,7 +78,7 @@ Les threads d'un block n'ont pas accès au tableau **s_data** d'autres blocks.
 
 Exercice 2 (Bonus):
 
-Cet exercice est un bonus pour si vous voulez implementez un convolution 2D (peut-être utile si vous faites de l'IA).
+Cet exercice est un bonus pour si vous voulez implementer une convolution 2D (peut-être utile si vous faites de l'IA).
 
 ![Convolution2D](conv2D.png)
 
