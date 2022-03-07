@@ -1,6 +1,6 @@
 ## TP1 : Convolution et mémoire partagée
 
-Ce tp est a rendre pour dimanche 13 mars 2022 date limite.
+Ce tp est à rendre pour dimanche 13 mars 2022 24:00 date limite.
 
 #### Google Colab
 Pour les étudiants n'ayant pas de carte graphique nvidia, le mieux est de creer un compte **google colab**.
@@ -75,6 +75,9 @@ Si le résultat des deux kernels sont différents, modifiez le kernel shared_con
 
 Faites attentions aux limites du tableau **s_data**, chaque block creer un tableau **s_data** de taille le nombre de threads de ce block. il récupère la sous-partie correspondante du tableau **a** dans **s_data** et réalise ensuite la convolution.
 Les threads d'un block n'ont pas accès au tableau **s_data** d'autres blocks.
+
+Quel implementation est plus rapide ? de beaucoup ?
+Qu'elle sont les types de mémoire encore utilisé dans le shared_convolution1D ?
 
 Exercice 2 (Bonus):
 
